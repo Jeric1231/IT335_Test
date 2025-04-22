@@ -12,20 +12,6 @@ const LoginPage = ({ onLoginSuccess }) => {
   const [errorMessages, setErrorMessages] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const handleGoogleLogin = () => {
-    window.location.href = 'http://localhost:8080/oauth2/authorization/google';
-  };
-  const handleGithubLogin = async () => {
-    try {
-        // Redirect to GitHub OAuth2 authorization endpoint
-        window.location.href = 'http://localhost:8080/oauth2/authorization/github';
-    } catch (error) {
-        console.error('GitHub login error:', error);
-    }
-  };
-  const handleFacebookLogin = () => {
-    window.location.href = 'http://localhost:8080/oauth2/authorization/facebook';
-  };
   useEffect(() => {
     document.title = 'Creative Clarity | Login';
   });
@@ -216,52 +202,6 @@ const LoginPage = ({ onLoginSuccess }) => {
                 </div>
               )}
             </form>
-
-            <div className="mt-6">
-              <div className="relative">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-300"></div>
-                </div>
-                <div className="relative flex justify-center text-sm">
-                  <span className="px-2 bg-white text-gray-500">
-                    Or Login With:
-                  </span>
-                </div>
-              </div>
-
-              <div className="mt-6 grid grid-cols-3 gap-3">
-              <button 
-                onClick={handleFacebookLogin}
-                className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50"
-              >
-                <img
-                  src="/src/assets/images/facebookIcon2.png"
-                  alt="Facebook"
-                  className="h-7 w-7"
-                />
-              </button>
-                <button 
-                  onClick={handleGithubLogin}
-                  className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50"
-                >
-                  <img
-                    src="/src/assets/images/github.png"
-                    alt="Github"
-                    className="h-7 w-7"
-                  />
-                </button>
-                <button 
-                  onClick={handleGoogleLogin}
-                  className="w-full flex justify-center items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm bg-white hover:bg-gray-50"
-                >
-                  <img
-                    src="/src/assets/images/googleIcon2.png"
-                    alt="Google"
-                    className="h-7 w-7"
-                  />
-                </button>
-              </div>
-            </div>
 
             <div className="mt-6 text-center">
               <Link
