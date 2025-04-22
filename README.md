@@ -63,7 +63,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 #Create a Database in MySQL Workbench
 name the database to creative_clarity
 
-Edit the password of MySQL configuration
+Edit the password of MySQL configuration in clarityspringboot/src/main/resources/application.properties
 
 # Clone this repository
 $ git clone https://github.com/Ban-Coca/CreativeClarity.git
