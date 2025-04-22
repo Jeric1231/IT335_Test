@@ -60,6 +60,11 @@
 To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/), and [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) installed on your computer. From your command line:
 
 ```bash
+#Create a Database in MySQL Workbench
+name the database to creative_clarity
+
+#Edit the password of MySQL configuration
+
 # Clone this repository
 $ git clone https://github.com/Ban-Coca/CreativeClarity.git
 
