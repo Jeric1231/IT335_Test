@@ -2,9 +2,6 @@ import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import { Snackbar, Alert, Tabs, Tab, Box, Typography } from '@mui/material';
-import ArchivePage from './Archive';
-import Grades from './Grades';
-import Gallery from './Gallery';
 import axios from 'axios'; // Import axios
 import CourseArchive from './CourseArchive';
 

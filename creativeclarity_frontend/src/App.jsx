@@ -17,7 +17,6 @@ import UserProfile from './pages/UserProfile';
 import NotesPage from './pages/NotesPage';
 import Timer from './pages/Timer';
 import CourseDetail from './page/CourseDetail';
-import Progress from './page/Progress'; // Import Progress component
 import NewStudySession from './pages/NewStudySession';
 import { Toaster } from 'sonner';
 
